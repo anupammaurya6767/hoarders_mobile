@@ -1,0 +1,447 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+/*to remove /////////////*/
+/*
+ul , ol{
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+*/
+
+
+/*
+div{
+    font-size: 0px;
+}
+*/
+
+/*
+img{
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+*/
+
+/*////////////////*/
+
+
+#image{
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+}
+
+#main{
+    width: 100%;
+    display:grid;
+    grid-template-rows: auto auto auto auto auto auto auto 1fr;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+
+/*header starts here/////////*/
+
+#header{
+    background-color: white;
+    grid-column: 1/2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+/*    align-content:space-around;*/
+}
+
+#header h1{
+    color: black;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: fantasy;
+    position:absolute;
+    
+}
+
+#image1{
+    height: 150px;
+    position: relative;
+    margin-top: 0px;
+}
+
+/*//////////////////*/
+
+/*menu items////////*/
+
+#menu{
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+}
+
+
+
+#menum{
+    background-color: white;
+    grid-column: 2/3;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#menum select{
+    background-color: white;
+    color: #ffba00;
+    width: 100%;
+    height: 60%;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 5px 25px;
+}
+
+#menum option {
+    font-size: 10px;
+    font-weight: 100;
+}
+
+#menum select{
+    border: 2px solid black;
+}
+
+/*/////////////////////*/
+
+#search{
+    background-color: yellow;
+/*    grid-column: 1/-1;*/
+     width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+/*box1 content starts here/////////*/
+
+#box1{
+    background-color: black;
+    grid-row: 2/4;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    
+}
+
+#up{
+    background-color: #FFC119;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#up img{
+    height: 100px;
+    position: relative;
+    margin-top: -35px;
+    margin-left: -25px;
+}
+
+#up1{
+    font-size: 3rem;
+}
+
+#low{
+    color: grey;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+
+#low1 a{
+    text-decoration: none;
+    color:#FFC119;
+    padding: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+#low1 a:last-child{
+    border-right: none;
+}
+
+#low1{
+    display:flex;
+    flex-wrap: wrap;
+    padding:2px;
+    justify-content: space-around;
+}
+
+#low1:hover{
+    border-top: 2px solid #FFC119;
+    border-bottom: 2px solid #FFC119;
+}
+
+#low1 a:hover{
+    color: white;
+}
+
+/*////////////////////////*/
+
+
+/*box2 starts here ////////////*/
+
+#box2{
+    background-color: black;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+#gu{
+    background-color: #FFC119;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 3rem;
+}
+
+#gu img{
+     height: 100px;
+    position: relative;
+    margin-top: -35px;
+}
+
+#lowbox2{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 15px;
+}
+
+#lowbox2 ul{
+    list-style: none;
+}
+
+#lowbox2 a{
+    text-decoration: none;
+    color: #FFC119;
+    font-size: 2rem;
+}
+
+#lowbox2 a:hover{
+    color: white;
+}
+
+/*/////////////////////////*/
+
+
+/*box3 starts here /////////////*/
+
+#box3{
+  background-color: black;
+    grid-row: 5/6;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+#box31{
+    background-color: #FFC119;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 3rem;
+}
+
+#box3 img{
+    
+     height: 100px;
+    position: relative;
+    margin-top: -35px;
+    
+}
+
+#box32 ul li{
+    padding: 5px;
+    color: #FFC119;
+}
+
+#box32 a{
+    text-decoration: none;
+    color: #FFC119;
+    font-size: 0.9rem;
+    transition: color 0.3s ease-in-out;
+}
+
+#box32 a:hover{
+    color: white;
+}
+
+
+/*//////////////////////*/
+
+/*main content starts here /////////*/
+
+#mc{
+    background-color: black;
+    grid-row: 6/7;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+#mc1{
+    background-color: #FFC119;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#mc1 img{
+    height: 120px;
+    position: relative;
+    margin-top: -35px;
+    margin-left: -15px;
+}
+
+#mc1 a{
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+    border-right: 2px solid black;
+    line-height: 2px;
+    transition: color 0.3s ease-in-out;
+}
+
+#mc1 a:last-child{
+    border-right: none;
+}
+
+#mc1 a:hover{
+    color: white;
+}
+
+#mc2>div{
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+
+/*///////////////////////////////*/
+
+
+/*side section starts here /////////////*/
+
+#side{
+    background-color: black;
+    grid-row: 2/6;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+#sideline{
+    background-color: #FFC119;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#sideline img{
+    height: 100px;
+    position: relative;
+    margin-top: -35px;
+    margin-left: -15px;
+}
+
+
+#day>a{
+    font-size: 2rem;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease-in-out;
+    border-right: 1px solid black;
+}
+
+#day a:last-child{
+    border-right: none;
+}
+
+#day a:hover{
+    color: white;
+}
+
+#sc ol li {
+    color: white;
+    padding: 5px;
+}
+
+#sc a{
+    color: #FFC119;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+#sc a:hover{
+    color: white;
+}
+
+
+#sc ol{
+    list-style: none;
+}
+
+/*
+#sc ol li:hover{
+    border-top: 2px solid #FFC119;
+    border-bottom: 2px solid #FFC119;
+}
+*/
+
+/*///////////////////////*/
+
+/*about section starts here //////////*/
+
+
+#contact{
+    background-color: black;
+    grid-column: 1/-1;
+    grid-row: 7/8;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+#about{
+    background-color: #FFC119;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#about img{
+    margin-top: -15px;
+    position: relative;
+}
+
+#about1{
+    color:white;
+    padding: 35px;
+}
+
+
+/*///////////////////////////////////*/
+
+#footer{
+    background-color: black;
+    grid-column: 1/-1;
+    grid-row: 8/9;
+    font-size: 1.5rem;
+    color: white;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
